@@ -112,6 +112,7 @@ ys_smooth = pandas.rolling_mean(numpy.array(ys), 20)
 pyplot.plot(ts, rs, color='green', label='target')
 pyplot.plot(ts, ys, color='red', label='queue length')
 pyplot.plot(ts, ys_smooth, color='blue', label='trend')
+pyplot.legend()
 pyplot.show()
 
 
